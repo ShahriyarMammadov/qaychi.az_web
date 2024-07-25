@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+
+  .logo {
+    text-align: center;
+
+    h1 {
+      font-size: 50px;
+      margin: 20px 5px;
+    }
+  }
+
+  .aboutText {
+    text-align: justify;
+    padding: 20px 10px;
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+
+  .downloadApp {
+    padding: 15px 10px 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+
+    .playmarket {
+      background-color: #F3F4F6;
+      cursor: pointer;
+      width: 200px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      border-radius: 10px;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #dfe1e4;
+      }
+
+      img {
+        width: 35px;
+      }
+
+      div {
+        p {
+          font-size: 13px;
+
+          &.name {
+            font-size: 17px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 625px) {
+    .aboutText {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .logo {
+      h1 {
+        font-size: 45px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .downloadApp {
+      padding: 15px 10px 80px 10px;
+
+      .playmarket {
+        width: 100%;
+      }
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
