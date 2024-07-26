@@ -61,4 +61,122 @@ header {
             }
         }
     }
+
+    #drawer {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: opacity 0.3s ease, all 0.5s ease;
+        pointer-events: none;
+
+        &.open {
+            visibility: visible;
+            transform: translateX(0);
+            pointer-events: auto;
+            opacity: 1;
+        }
+
+        .drawerContent {
+            padding: 40px 40px;
+            background-color: #121212;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease, visibility 1s ease, transform 1.5s ease;
+            overflow: scroll;
+            height: 100vh;
+
+            &.open {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0);
+            }
+
+            &.closed {
+                transform: translateX(100%);
+            }
+
+            .head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h4 {
+                    color: #FFC02D;
+                    font-size: 13px;
+                    font-weight: 400px;
+
+                }
+
+                .closeIcon {
+                    color: #FFC02D;
+                    cursor: pointer;
+                    padding: 5px 15px;
+                }
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 40px;
+
+                div {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+
+                    .subMenu {
+
+                        a {
+                            padding: 10px;
+
+                            &:nth-child(1) {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    font-size: 13px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+
+            p {
+                margin-top: 50px;
+                color: rgb(175, 175, 175);
+                font-size: 14px;
+            }
+
+            .socialMediaIcons {
+                margin-top: 45px;
+                display: flex;
+                gap: 20px;
+
+                a {
+                    .socialIcons {
+                        width: 20px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            width: 250px;
+
+            .drawerContent {
+                padding: 40px 30px;
+            }
+        }
+    }
 }
