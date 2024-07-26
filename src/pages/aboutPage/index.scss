@@ -1,0 +1,33 @@
+#aboutPage {
+    .heroImage {
+        background: linear-gradient(0deg, rgba(2, 2, 2, 0.621), rgba(0, 0, 0, 0.792)), url('../../assets/section1_hero.jpg');
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                color: #FFC02D;
+                font-size: 60px;
+            }
+        }
+    }
+
+    .container {
+        .description {
+            margin: 20px 10px;
+
+            img {
+                margin: 20px 0;
+                width: 250px;
+            }
+        }
+    }
+}

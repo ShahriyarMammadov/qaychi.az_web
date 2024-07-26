@@ -2,11 +2,17 @@ import "./App.css";
 import "./index.scss";
 import playmarket from "./assets/playmarket.png";
 import apple from "./assets/apple.png";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ROUTES from "./routes";
 
 function App() {
+  const router = createBrowserRouter(ROUTES);
+
   return (
     <>
-      <div className="container">
+      <RouterProvider router={router}></RouterProvider>
+
+      {/* <div className="container">
         <div className="logo">
           <h1>Qaychi.az</h1>
         </div>
@@ -91,7 +97,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

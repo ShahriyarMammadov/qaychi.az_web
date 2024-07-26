@@ -1,0 +1,107 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.882);
+    padding: 50px 15px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 40%;
+
+            .logo {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                color: #FFC02D;
+
+            }
+
+            p {
+                margin-top: 20px;
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+
+        .rightContainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            width: 50%;
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #FFC02D;
+                    }
+                }
+            }
+
+            .right {
+                color: #fff;
+
+                div {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    a {
+                        width: fit-content;
+                        color: #fff;
+                        text-decoration: none;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #FFC02D;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .container {
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 25px;
+
+            .left {
+                width: 100%;
+            }
+
+
+            .rightContainer {
+                justify-content: space-around;
+                width: 80%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            .rightContainer {
+                flex-direction: column;
+
+                nav {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 95vw;
+                    gap: 15px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
