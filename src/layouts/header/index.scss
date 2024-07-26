@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+
 header {
     background-color: black;
     padding: 15px 10px;
@@ -72,6 +74,7 @@ header {
         transform: translateX(100%);
         transition: opacity 0.3s ease, all 0.5s ease;
         pointer-events: none;
+        font-family: "Poppins", sans-serif;
 
         &.open {
             visibility: visible;

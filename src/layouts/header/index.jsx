@@ -63,33 +63,21 @@ const Header = () => {
           </div>
 
           <nav>
-            <div
-              onClick={() => {
-                setSubMenu(subMenu === 1 ? 0 : 1);
-              }}
-            >
-              <Link to={"/haqqimizda"}>Haqqımızda</Link>
-            </div>
+            <Link to={"/haqqimizda"} onClick={() => setOpen(false)}>
+              Haqqımızda
+            </Link>
 
             <Link to={"/rezervation"} onClick={() => setOpen(false)}>
               Rezervasiya
             </Link>
 
-            <div
-              onClick={() => {
-                setSubMenu(subMenu === 2 ? 0 : 2);
-              }}
-            >
-              <Link to={"/services"}>Xidmətlər</Link>
-            </div>
+            <Link to={"/services"} onClick={() => setOpen(false)}>
+              Xidmətlər
+            </Link>
 
-            <div
-              onClick={() => {
-                setSubMenu(subMenu === 2 ? 0 : 2);
-              }}
-            >
-              <Link to={"/contact"}>Əlaqə</Link>
-            </div>
+            <Link to={"/contact"} onClick={() => setOpen(false)}>
+              Əlaqə
+            </Link>
           </nav>
 
           <p>
@@ -100,7 +88,7 @@ const Header = () => {
 
           <div className="socialMediaIcons">
             <a
-              href="https://www.facebook.com/NatureFriends"
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -108,7 +96,7 @@ const Header = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/naturefriendsaz/"
+              href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -116,7 +104,7 @@ const Header = () => {
             </a>
 
             <a
-              href="https://www.facebook.com/NatureFriends"
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -124,7 +112,7 @@ const Header = () => {
             </a>
 
             <a
-              href="https://www.facebook.com/NatureFriends"
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >

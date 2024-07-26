@@ -30,4 +30,41 @@
             }
         }
     }
+
+    @media only screen and (max-width: 800px) {
+        .heroImage {
+            .container {
+                h2 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .heroImage {
+            .container {
+                h2 {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        .container {
+            .description {
+                text-align: justify;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .heroImage {
+            .container {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }
