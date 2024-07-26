@@ -1,7 +1,13 @@
 import React from "react";
 import "./index.scss";
-import { FaScissors } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaScissors,
+  FaTwitter,
+} from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -17,6 +23,40 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
             earum. eaurm, asurm, aib jjhwqi jsfh
           </p>
+
+          <div className="socialMediaIcons">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="socialIcons" />
+            </a>
+
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsInstagram className="socialIcons" />
+            </a>
+
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="socialIcons" />
+            </a>
+
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="socialIcons" />
+            </a>
+          </div>
         </div>
 
         <div className="rightContainer">
