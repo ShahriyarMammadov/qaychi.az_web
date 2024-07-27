@@ -2,11 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import "./index.scss";
 import { Link, NavLink } from "react-router-dom";
 import {
-  FaMagnifyingGlass,
-  FaBarsStaggered,
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
+  FaRegPaperPlane,
 } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 
@@ -32,25 +31,21 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="logo">
-          <Link>
-            <h2>Qaychi.az</h2>
+          <Link to={"/"}>
+            <h4>Qaychi.az</h4>
           </Link>
         </div>
 
         <nav>
           <NavLink to={"/"}>Ana Səhifə</NavLink>
-          <NavLink to={"/haqqimizda"}>Haqqımızda</NavLink>
-          <NavLink to={"/services"}>Xidmətlər</NavLink>
+          <NavLink to={"/about"}>Haqqımızda</NavLink>
+          <NavLink to={"/partners"}>Partnyorlar</NavLink>
           <NavLink to={"/contact"}>Əlaqə</NavLink>
-
-          <div className="searchContainer">
-            <FaMagnifyingGlass className="searchIcon" />
-          </div>
-
-          <div className="menuBar" onClick={() => setOpen(true)}>
-            <FaBarsStaggered />
-          </div>
         </nav>
+
+        <button>
+          <FaRegPaperPlane className="icon" /> Bizə qoşul
+        </button>
       </div>
 
       <div id="drawer" className={open ? "open" : "closed"} ref={drawerRef}>

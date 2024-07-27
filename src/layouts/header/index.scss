@@ -1,17 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
 
 header {
-    background-color: black;
-    padding: 15px 10px;
+    margin: 20px 0;
 
     .container {
+        padding: 18px 20px;
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 15px;
 
         a {
             text-decoration: none;
-            color: #FFC02D;
+        }
+
+        .logo {
+            a {
+                font-size: 18px;
+                color: black;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: #FFC02D;
+                }
+            }
         }
 
         nav {
@@ -27,23 +41,45 @@ header {
 
             a {
                 transition: all 0.5s;
+                line-height: 35px;
+                font-size: 15px;
+                color: black;
+
+                a {
+                    text-decoration: none;
+                    color: #FFC02D;
+                }
 
                 &:hover {
-                    color: #b88714;
+                    color: #FFC02D;
                 }
 
                 &.active {
-                    color: #b88714;
+                    color: #FFC02D;
+                    border-bottom: 1px solid #FFC02D;
                 }
             }
+        }
 
-            .searchContainer {
-                margin-left: 20px;
+        button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            background-color: #FFC02D;
+            font-size: 14px;
+            transition: all 0.5s;
 
-                .searchIcon {
-                    color: white;
-                    cursor: pointer;
-                }
+            .icon {
+                font-size: 15px;
+            }
+
+            &:hover {
+                background-color: #e6ba52;
             }
         }
 

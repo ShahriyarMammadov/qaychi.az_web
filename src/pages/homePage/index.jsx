@@ -3,6 +3,7 @@ import "./index.scss";
 import { FaScissors, FaCheck } from "react-icons/fa6";
 import image1 from "../../assets/section2_1.jpg";
 import image2 from "../../assets/section2_2.jpg";
+import CarouselComponent from "../../components/carousel";
 
 const HomePage = () => {
   const rightSectionRef = useRef(null);
@@ -33,21 +34,7 @@ const HomePage = () => {
     <div id="homePage">
       <section id="section1">
         <div className="container">
-          <div className="description">
-            <div className="logo">
-              <FaScissors className="icon" />
-              <h3>Qaychi.az</h3>
-            </div>
-            <div className="description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                accusantium facilis minima eaque, est vel, pariatur suscipit
-                quia quaerat dolorem corporis aperiam? Facere nobis aliquid iste
-                debitis eveniet aut eligendi
-              </p>
-              <button className="appointmentButton">Rezerv Et</button>
-            </div>
-          </div>
+          <CarouselComponent />
         </div>
       </section>
 

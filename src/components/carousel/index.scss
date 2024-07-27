@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG&display=swap');
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    &::selection {
+        background-color: rebeccapurple;
+    }
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    cursor: grab;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content {
+            max-width: 55%;
+
+            h2 {
+                margin-bottom: 15px;
+                font-family: "Playwrite BE VLG", cursive;
+                color: #FFC02D;
+                font-size: 30px;
+            }
+        }
+
+        .image {
+            img {
+                width: 400px;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+}
