@@ -265,21 +265,62 @@
             }
 
             @media only screen and (max-width: 910px) {
+                .right {
+                    div {
+                        width: 200px;
+                        justify-content: start;
+
+                        p {
+                            &:nth-child(1) {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 800px) {
+                flex-direction: column;
+                padding: 18px 15px;
+
                 .left {
-                    width: 70%;
+                    width: 100%;
+                }
+
+                .right {
+                    margin-top: 30px;
+
+                    div {
+                        flex-direction: column;
+                        width: 100%;
+
+                        p {
+                            font-size: 20px;
+
+                            &:nth-child(1) {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                .left {
+                    width: 100%;
 
                     h2 {
-                        font-size: 22px;
+                        font-size: 20px;
                     }
                 }
 
                 .right {
                     div {
-                        width: 250px;
-
                         p {
+                            font-size: 18px;
+
                             &:nth-child(1) {
-                                font-size: 18px;
+                                font-size: 20px;
                             }
                         }
                     }
