@@ -4,32 +4,6 @@
   max-width: 1300px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
-
-  @media only screen and (max-width: 625px) {
-    .aboutText {
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .logo {
-      h1 {
-        font-size: 45px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 425px) {
-    .downloadApp {
-      padding: 15px 10px 80px 10px;
-
-      .playmarket {
-        width: 100%;
-      }
-    }
-  }
 }
 
 * {

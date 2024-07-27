@@ -43,7 +43,6 @@ const CarouselComponent = () => {
     setIsDragging(true);
     setStartPosition(event.clientX);
     setPrevTranslate(currentTranslate);
-    stopAutoPlay();
   };
 
   const handleMouseMove = (event) => {
@@ -68,7 +67,6 @@ const CarouselComponent = () => {
 
     setCurrentTranslate(0);
     setPrevTranslate(0);
-    startAutoPlay();
   };
 
   return (
@@ -94,7 +92,7 @@ const CarouselComponent = () => {
             <div className="card">
               <div className="content">
                 <h2>{slide?.headText}</h2>
-                <p>{slide?.description}</p>
+                <p className="desc">{slide?.description}</p>
 
                 <DownloadButtons />
               </div>

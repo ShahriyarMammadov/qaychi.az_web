@@ -4,10 +4,6 @@
     overflow: hidden;
     width: 100%;
     position: relative;
-
-    &::selection {
-        background-color: rebeccapurple;
-    }
 }
 
 .carousel-wrapper {
@@ -20,6 +16,7 @@
 .carousel-slide {
     min-width: 100%;
     box-sizing: border-box;
+    padding: 0 8px;
 
     .card {
         display: flex;
@@ -42,6 +39,108 @@
                 width: 400px;
                 height: auto;
                 object-fit: contain;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .card {
+            .image {
+                img {
+                    width: 350px;
+                }
+            }
+
+            .content {
+                h2 {
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .card {
+            .image {
+                img {
+                    width: 320px;
+                }
+            }
+
+            .content {
+                max-width: 50%;
+
+                h2 {
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 730px) {
+        .card {
+            flex-direction: column-reverse;
+            padding: 20px 0;
+
+            .image {
+                margin-bottom: 12px;
+
+                img {
+                    width: 260px;
+                }
+            }
+
+            .content {
+                max-width: 100%;
+
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .card {
+            padding: 15px 0;
+
+            .image {
+                img {
+                    width: 220px;
+                }
+            }
+
+            .content {
+
+                h2 {
+                    font-size: 22px;
+                }
+
+                .desc {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .card {
+
+            .image {
+                img {
+                    width: 200px;
+                }
+            }
+
+            .content {
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                .desc {
+                    font-size: 14px;
+                }
             }
         }
     }

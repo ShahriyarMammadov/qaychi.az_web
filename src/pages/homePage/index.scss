@@ -2,44 +2,37 @@
     #section1 {
         margin: 30px 0;
 
+        @media only screen and (max-width: 1330px) {
+            margin: 20px;
+        }
+
         .container {
             background-color: #fff;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             border-radius: 15px;
             padding: 18px 35px;
-        }
 
-        @media only screen and (max-width: 800px) {
-            .container {
-                .description {
-                    .logo {
-                        h3 {
-                            font-size: 50px;
-                        }
-                    }
-                }
-            }
-        }
-
-        @media only screen and (max-width: 700px) {
-            .container {
-                .description {
-                    p {
-                        font-size: 15px;
-                        padding: 0 15px;
-                    }
-                }
+            @media only screen and (max-width: 1000px) {
+                padding: 18px 15px;
             }
         }
     }
 
     #section2 {
-        padding: 50px 15px;
+        margin: 30px 0;
+
+        @media only screen and (max-width: 1330px) {
+            margin: 20px;
+        }
 
         .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 18px 35px;
+            background-color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 15px;
 
             .left {
                 width: 48%;
@@ -88,7 +81,7 @@
 
                 img {
                     transition: transform 0.5s;
-                    width: 100%;
+                    width: 90%;
                     height: auto;
                     border: 8px solid #fff;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -97,7 +90,7 @@
                     &.altImage {
                         margin-top: -15%;
                         margin-left: 40%;
-                        width: 65%;
+                        width: 60%;
                     }
                 }
             }
@@ -128,6 +121,12 @@
                         }
                     }
                 }
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .container {
+                padding: 18px 20px;
             }
         }
 
@@ -189,6 +188,118 @@
                     }
                 }
             }
+        }
+    }
+
+    #section3 {
+        margin: 30px 0;
+
+        @media only screen and (max-width: 1330px) {
+            margin: 20px;
+        }
+
+        .container {
+            padding: 18px 35px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+
+            .left {
+                width: 40%;
+
+                span {
+                    color: #FFC02D;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: end;
+                gap: 20px;
+
+                div {
+                    width: 270px;
+                    padding: 15px;
+
+                    p {
+                        font-size: 17px;
+                        color: rgb(83, 80, 80);
+
+                        &:nth-child(1) {
+                            font-weight: 600;
+                            font-size: 20px;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1145px) {
+                .left {
+                    width: 60%;
+                }
+            }
+
+            @media only screen and (max-width: 1000px) {
+                .left {
+                    width: 70%;
+
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+
+                .right {
+                    div {
+                        width: 250px;
+
+                        p {
+                            &:nth-child(1) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 910px) {
+                .left {
+                    width: 70%;
+
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+
+                .right {
+                    div {
+                        width: 250px;
+
+                        p {
+                            &:nth-child(1) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #section4 {
+        margin: 30px 0;
+
+        @media only screen and (max-width: 1330px) {
+            margin: 20px;
+        }
+
+        .container {
+            padding: 30px 35px;
+            background-color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 15px;
         }
     }
 }

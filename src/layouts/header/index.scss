@@ -3,6 +3,10 @@
 header {
     margin: 20px 0;
 
+    @media only screen and (max-width: 1330px) {
+        margin: 20px;
+    }
+
     .container {
         padding: 18px 20px;
         background-color: #ffffff;
@@ -33,12 +37,6 @@ header {
             align-items: center;
             gap: 40px;
 
-            .menuBar {
-                display: none;
-                color: #fff;
-                font-size: 20px;
-            }
-
             a {
                 transition: all 0.5s;
                 line-height: 35px;
@@ -61,40 +59,98 @@ header {
             }
         }
 
-        button {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: 600;
-            background-color: #FFC02D;
-            font-size: 14px;
-            transition: all 0.5s;
-
-            .icon {
-                font-size: 15px;
+        .menu {
+            .menuBar {
+                display: none;
+                color: #121212;
+                font-size: 25px;
             }
 
-            &:hover {
-                background-color: #e6ba52;
+            button {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-weight: 600;
+                background-color: #FFC02D;
+                font-size: 14px;
+                transition: all 0.5s;
+
+                .icon {
+                    font-size: 15px;
+                }
+
+                &:hover {
+                    background-color: #e6ba52;
+                }
             }
         }
 
-        @media only screen and (max-width: 700px) {
-            padding: 0 20px;
-
+        @media only screen and (max-width: 800px) {
             nav {
+                display: none;
+            }
 
-                a {
-                    display: none;
-                }
+            .menu {
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                gap: 30px;
 
-                .searchContainer,
                 .menuBar {
                     display: inline;
+                    text-align: center;
+                }
+
+                button {
+                    .icon {
+                        font-size: 25px;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+
+            .logo {
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .menu {
+                gap: 40px;
+
+                .menuBar {
+                    font-size: 23px;
+                }
+
+                button {
+                    .icon {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .menu {
+                gap: 25px;
+
+                .menuBar {
+                    font-size: 22px;
+                }
+
+                button {
+                    .icon {
+                        font-size: 21px;
+                    }
                 }
             }
         }
@@ -111,6 +167,7 @@ header {
         transition: opacity 0.3s ease, all 0.5s ease;
         pointer-events: none;
         font-family: "Poppins", sans-serif;
+        z-index: 50;
 
         &.open {
             visibility: visible;

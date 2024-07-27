@@ -6,6 +6,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaRegPaperPlane,
+  FaBarsStaggered,
 } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 
@@ -43,9 +44,15 @@ const Header = () => {
           <NavLink to={"/contact"}>Əlaqə</NavLink>
         </nav>
 
-        <button>
-          <FaRegPaperPlane className="icon" /> Bizə qoşul
-        </button>
+        <div className="menu">
+          <button>
+            <FaRegPaperPlane className="icon" /> <span>Bizə qoşul</span>
+          </button>
+
+          <div className="menuBar" onClick={() => setOpen(true)}>
+            <FaBarsStaggered />
+          </div>
+        </div>
       </div>
 
       <div id="drawer" className={open ? "open" : "closed"} ref={drawerRef}>
