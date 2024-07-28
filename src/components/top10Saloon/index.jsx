@@ -58,7 +58,7 @@ const Top10Saloon = () => {
     <div id="top10SaloonComponent">
       {data?.map((e, i) => {
         return (
-          <Link className="card" to={"/"}>
+          <Link className="card" to={"/"} key={i}>
             <div className="image">
               <img src={e?.coverImageURL} alt={e?.name} />
             </div>
