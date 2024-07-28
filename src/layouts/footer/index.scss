@@ -199,6 +199,21 @@ footer {
                     margin-bottom: 20px;
                 }
             }
+
+            .contactInfo {
+
+                a {
+                    padding: 20px;
+                }
+
+                &.location {
+                    width: 40%;
+
+                    .icon {
+                        font-size: 60px !important;
+                    }
+                }
+            }
         }
 
         @media only screen and (max-width: 450px) {
