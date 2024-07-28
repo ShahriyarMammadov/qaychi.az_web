@@ -207,6 +207,16 @@ footer {
 
                     .icon {
                         min-width: 35px;
+                        font-size: 26px;
+                    }
+
+                    div {
+
+                        p {
+                            &.bold {
+                                font-size: 15px;
+                            }
+                        }
                     }
                 }
             }
