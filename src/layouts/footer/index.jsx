@@ -93,9 +93,9 @@ const Footer = () => {
               </div>
 
               <div className="links">
-                <Link to={"/"}>Biz kimik?</Link>
-                <Link to={"/"}>Missiyamız</Link>
-                <Link to={"/"}>Fəaliyyətlərimiz</Link>
+                <Link to={"/about"}>Biz kimik?</Link>
+                <Link to={"/about"}>Missiyamız</Link>
+                <Link to={"/about"}>Fəaliyyətlərimiz</Link>
               </div>
             </div>
 
