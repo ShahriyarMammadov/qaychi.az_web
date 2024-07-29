@@ -61,5 +61,18 @@
                 }
             }
         }
+
+        @media only screen and (max-width: 400px) {
+            .partner {
+                min-width: 130px;
+
+                .image {
+
+                    img {
+                        width: 130px;
+                    }
+                }
+            }
+        }
     }
 }
