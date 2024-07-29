@@ -70,7 +70,12 @@ footer {
                 color: black;
                 display: flex;
                 align-items: center;
+                transition: all 0.5s;
                 gap: 20px;
+
+                &:hover {
+                    background-color: #e3e4e7;
+                }
 
                 &.tel {
                     width: 28%;

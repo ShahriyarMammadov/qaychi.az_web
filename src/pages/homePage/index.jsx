@@ -5,6 +5,7 @@ import image1 from "../../assets/section2_1.jpg";
 import image2 from "../../assets/section2_2.jpg";
 import CarouselComponent from "../../components/carousel";
 import Top10Saloon from "../../components/top10Saloon";
+import Partners from "../../components/partners";
 
 const HomePage = () => {
   const rightSectionRef = useRef(null);
@@ -129,6 +130,13 @@ const HomePage = () => {
           <h3>Top 8 salon</h3>
 
           <Top10Saloon />
+        </div>
+      </section>
+
+      {/* partners */}
+      <section id="section5">
+        <div className="container">
+          <Partners />
         </div>
       </section>
     </div>
