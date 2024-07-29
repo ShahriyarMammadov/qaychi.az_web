@@ -31,14 +31,6 @@ const Partners = () => {
       name: "Bolt",
       imageURL: bolt,
     },
-    {
-      name: "Bolt",
-      imageURL: bolt,
-    },
-    {
-      name: "Bolt",
-      imageURL: bolt,
-    },
   ];
 
   return (

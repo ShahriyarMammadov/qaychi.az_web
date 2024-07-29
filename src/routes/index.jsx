@@ -13,7 +13,7 @@ const ROUTES = [
         element: <HomePage />,
       },
       {
-        path: "haqqimizda",
+        path: "about",
         element: <AboutPage />,
       },
       {
