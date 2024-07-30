@@ -48,6 +48,14 @@
                 color: #FFC02D;
             }
 
+            p {
+                text-align: justify;
+
+                span {
+                    color: #FFC02D;
+                }
+            }
+
             @media only screen and (max-width: 1000px) {
                 padding: 18px 15px;
             }
@@ -326,7 +334,7 @@
                     }
 
                     h1 {
-                        font-size: 60px;
+                        font-size: 45px;
                         color: rgba(0, 0, 0, 0.647);
                         margin-bottom: 10px;
                     }
@@ -453,20 +461,23 @@
                     .left {
 
                         h1 {
-                            font-size: 40px;
+                            font-size: 25px;
                         }
-                    }
-                }
-            }
-
-            @media only screen and (max-width: 520px) {
-                .container {
-
-                    .left {
 
                         .services {
                             flex-direction: column;
                             gap: 0px;
+                        }
+                    }
+
+                    .rightContainer {
+
+                        img {
+                            width: 85%;
+
+                            &.altImage {
+                                width: 68%;
+                            }
                         }
                     }
                 }

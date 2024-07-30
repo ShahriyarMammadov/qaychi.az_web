@@ -13,31 +13,31 @@ import image2 from "../../assets/section2_2.jpg";
 const AboutPage = () => {
   const data = [
     {
-      title: "İnam",
+      title: "Müştəri Məmnuniyyəti",
       text: "İşimizə və bir-birimizə qarşı inamın formalaşması üçün yüksək mənəvi prinsiplərlə davranırıq.",
       imageURL:
         "https://code.edu.az/wp-content/uploads/2024/03/inclusiveness-1_png.webp",
     },
     {
-      title: "İnnovasiya",
+      title: "İnnovasiya və Yenilik",
       text: "Qlobal innovasiyaları izləyir, məhsullarımızı təkmilləşdirərək müştərilərimizə xidmət göstəririk.",
       imageURL:
         "https://code.edu.az/wp-content/uploads/2024/03/inclusiveness-1_png.webp",
     },
     {
-      title: "İnkişaf",
+      title: "Keyfiyyət və Etibarlılıq",
       text: "Əməkdaşlarımızın və məhsullarımızın daimi inkişafını hər zaman təmin edirik.",
       imageURL:
         "https://code.edu.az/wp-content/uploads/2024/03/inclusiveness-1_png.webp",
     },
     {
-      title: "İndividuallıq",
+      title: "Peşəkarlıq və Dəstək",
       text: "Özünəməxsus proqramlarımız, xidmətimiz və yanaşmamızla sektorda digərlərindən fərqlənirik.",
       imageURL:
         "https://code.edu.az/wp-content/uploads/2024/03/inclusiveness-1_png.webp",
     },
     {
-      title: "İnsanlıq",
+      title: "Individualliq",
       text: "Gələcəyini formalaşdırmaq istəyən və şəxsi inkişafa can atan hər kəsi tələbəmiz olaraq görürük.",
       imageURL:
         "https://code.edu.az/wp-content/uploads/2024/03/inclusiveness-1_png.webp",
@@ -109,41 +109,57 @@ const AboutPage = () => {
           <h2>2023-cü ildən gələcəyə doğru...</h2>
 
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-            nesciunt molestiae tempore, quod inventore libero, error veniam nam,
-            recusandae veritatis facere sunt? Veritatis doloribus, assumenda
-            mollitia magni recusandae necessitatibus excepturi! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Maxime sapiente totam
-            eos sequi quos, ratione illo culpa molestias at accusamus atque ipsa
-            fuga? Magni sit illo consequatur debitis inventore ut voluptatum
-            error nam fuga deserunt perspiciatis adipisci totam, nihil
-            excepturi! Accusamus neque quidem est eveniet ducimus commodi amet
-            ipsa placeat quo harum, nemo et? Deserunt esse veritatis earum sunt
-            temporibus tempore perspiciatis, explicabo est, eum cumque
-            necessitatibus quas consectetur repellat sit. Dignissimos numquam
-            distinctio soluta nam, ipsum unde provident maxime voluptatibus
-            placeat tenetur totam, dolor culpa consequatur reprehenderit enim,
-            sed omnis mollitia facilis rem vel recusandae quae! Aliquid animi,
-            doloribus exercitationem fugit ipsam numquam amet quas maxime
-            similique fuga inventore dolorem quam iusto aspernatur possimus eos
-            error natus, cumque minus debitis eaque magni nihil delectus vel.
-            Doloremque a fugiat, vitae unde asperiores reiciendis, voluptate
-            sapiente, sint perferendis fugit culpa. Quasi tempore, facere culpa
-            obcaecati adipisci voluptatum incidunt assumenda non officiis.
+            Biz, <span>Qaychi</span>, gözəllik sahəsindəki peşəkar xidmətləri
+            daha da mükəmməl etmək üçün yaradılmış bir innovasiya layihəsiyik.
+            Mobil tətbiqimiz, berberlər, gözəllik salonları və dırnaq ustaları
+            üçün nəzərdə tutulmuşdur. Əsas məqsədimiz, bu peşəkar xidmətlərin
+            idarə edilməsini asanlaşdırmaq və müştəri təcrübəsini artırmaqdır.
+            Tətbiqimiz, müasir texnologiyalarla təmin edilmiş, istifadəsi rahat
+            və intuitiv bir platformadır. Müxtəlif xidmətlər üçün təyinatlar,
+            görüşlər və müştəri əlaqələri idarəetmə funksiyaları təklif edirik.
+            Hər bir istifadəçi, tətbiqimiz vasitəsilə xidmətləri sürətlə tapa
+            bilər, ətraflı məlumat əldə edə bilər və birbaşa əlaqə quraraq öz
+            ehtiyaclarına uyğun seçimlər edə bilər. <br /> Biz, müştəri
+            məmnuniyyətini ön planda saxlayaraq, xidmətlərin keyfiyyətini
+            artırmağa çalışırıq. Mobil tətbiqimiz, gözəllik salonlarının iş
+            yükünü azaltmağa və işlərini daha effektiv şəkildə idarə etməyə
+            imkan tanıyır. Tətbiqimiz həmçinin, müştəri təcrübəsini şəxsi
+            ehtiyaclara uyğun şəkildə fərdiləşdirərək, xidmətlərin keyfiyyətini
+            yüksəltmək məqsədini güdür. İşimizdə ən son texnoloji yenilikləri
+            tətbiq edərək, müştərilərimizə ən yaxşı nəticələri təqdim etməyi
+            hədəfləyirik. Bizimlə əməkdaşlıq edən gözəllik mütəxəssisləri,
+            xidmətlərində daha yüksək standartları təmin edə bilmək üçün
+            tətbiqimizdən maksimum istifadə edə bilərlər. Gözəllik sektorunda
+            bir addım öndə olmaq üçün davamlı inkişafı və yenilikləri izləyirik.
+            Şirkətimiz, peşəkar komandası ilə müştərilərinə optimal həllər
+            təqdim etməyi özünə məqsəd qoyur. Bizim tətbiqimiz, gözəllik
+            xidmətlərinin daha şəffaf, rahat və müasir bir şəkildə həyata
+            keçirilməsinə kömək edir. Qaychi olaraq, sizə daha yaxşı xidmət
+            təqdim etmək üçün daima çalışırıq. Bizim məqsədimiz, gözəllik
+            sektorunun inkişafını dəstəkləmək və müştəri təcrübəsini
+            artırmaqdır. Tətbiqimizlə tanış olun və gözəllik xidmətlərinizin
+            idarə edilməsində yeni bir dövrə qədəm qoyun!
           </p>
         </section>
 
         <section id="section4">
           <div className="container">
             <div className="left">
-              <h1>2 İllik təcrübə</h1>
+              <h1>Xidmətlərimizdə Niyə Daha Effektivik?</h1>
               <FaScissors style={{ color: "#FFC02D", fontSize: "20px" }} />
               <p>
-                Morbi ut blandit mauris, ac aliquet arcu. Curabitur non nulla
-                pharetra, sodales neque ac, ultrices orci. Etiam laoreet sem sed
-                posuere mollis. Donec non libero scelerisque, volutpat augue
-                quis, sagittis odio. Curabitur dictum mollis libero vel aliquam.
-                Suspendisse id eleifend sapien. Proin sed lobortis nisl.
+                Qaychi tətbiqi, gözəllik xidmətlərini daha sürətli və effektiv
+                şəkildə əldə etməyiniz üçün nəzərdə tutulmuşdur. Sizin
+                rahatlığınız üçün, rezervasiya prosesini asanlaşdırır və
+                sürətləndiririk. Tətbiqimiz vasitəsilə, xidmətlərə dərhal
+                təyinat edə bilirsiniz və gözləmə vaxtınızı minimuma endiririk.
+                Mekanları asanlıqla tapmaq üçün intuitiv xəritə funksiyalarımız
+                mövcuddur. Beləliklə, ən yaxın və ən uyğun gözəllik salonlarını
+                tez bir zamanda tapa bilərsiniz. Xidmətlərin vaxtını dəqiq təyin
+                edərək, sizin vaxtınıza qənaət edirik və hər bir görüşü planlı
+                şəkildə təşkil edirik. Bizim tətbiqimizdə müştəri rəyləri və
+                qiymətləndirmələri ilə xidmətlərin keyfiyyəti haqqında ətraflı
+                məlumat əldə etmək mümkündür.
               </p>
               <div className="services">
                 <div className="left">
@@ -168,7 +184,7 @@ const AboutPage = () => {
                   </div>
                   <div>
                     <FaCheck className="checkIcon" />
-                    <p>Padikur</p>
+                    <p>Dərzi xidmətləri</p>
                   </div>
                   <div>
                     <FaCheck className="checkIcon" />
