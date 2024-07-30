@@ -7,8 +7,9 @@ import {
   FaTwitter,
   FaRegPaperPlane,
   FaBarsStaggered,
+  FaXmark,
 } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsYoutube } from "react-icons/bs";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -60,21 +61,21 @@ const Header = () => {
           <div className="head">
             <h4>MENU</h4>
             <div className="closeIcon" onClick={() => setOpen(false)}>
-              x
+              <FaXmark />
             </div>
           </div>
 
           <nav>
+            <Link to={"/"} onClick={() => setOpen(false)}>
+              Ana səhifə
+            </Link>
+
             <Link to={"/about"} onClick={() => setOpen(false)}>
               Haqqımızda
             </Link>
 
-            <Link to={"/rezervation"} onClick={() => setOpen(false)}>
-              Rezervasiya
-            </Link>
-
-            <Link to={"/services"} onClick={() => setOpen(false)}>
-              Xidmətlər
+            <Link to={"/partners"} onClick={() => setOpen(false)}>
+              Partnyorlarımız
             </Link>
 
             <Link to={"/contact"} onClick={() => setOpen(false)}>
@@ -119,6 +120,14 @@ const Header = () => {
               rel="noopener noreferrer"
             >
               <FaTwitter className="socialIcons" />
+            </a>
+
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsYoutube className="socialIcons" />
             </a>
           </div>
         </div>
