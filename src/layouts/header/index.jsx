@@ -84,9 +84,8 @@ const Header = () => {
           </nav>
 
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-            alias nam voluptate accusamus vitae at vero mollitia cumque ducimus
-            assumenda.
+            Biz, Qaychi, gözəllik sahəsindəki peşəkar xidmətləri daha da
+            mükəmməl etmək üçün yaradılmış bir innovasiya layihəsiyik.
           </p>
 
           <div className="socialMediaIcons">

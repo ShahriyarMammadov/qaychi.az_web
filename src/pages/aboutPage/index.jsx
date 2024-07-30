@@ -131,6 +131,7 @@ const AboutPage = () => {
             xidmətlərində daha yüksək standartları təmin edə bilmək üçün
             tətbiqimizdən maksimum istifadə edə bilərlər. Gözəllik sektorunda
             bir addım öndə olmaq üçün davamlı inkişafı və yenilikləri izləyirik.
+            <br />
             Şirkətimiz, peşəkar komandası ilə müştərilərinə optimal həllər
             təqdim etməyi özünə məqsəd qoyur. Bizim tətbiqimiz, gözəllik
             xidmətlərinin daha şəffaf, rahat və müasir bir şəkildə həyata
