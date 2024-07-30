@@ -75,6 +75,8 @@ const AboutPage = () => {
   const rightSectionRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
     const handleMouseMove = (e) => {
       if (rightSectionRef.current) {
         const { left, top, width, height } =
