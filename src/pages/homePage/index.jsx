@@ -6,6 +6,12 @@ import image2 from "../../assets/section2_2.jpg";
 import CarouselComponent from "../../components/carousel";
 import Top10Saloon from "../../components/top10Saloon";
 import Partners from "../../components/partners";
+import { FaChevronRight } from "react-icons/fa6";
+import massage from "../../assets/massage.png";
+import barbershop from "../../assets/barbershop.png";
+import beautySaloon from "../../assets/beautySaloon.png";
+import fitness from "../../assets/fitness.png";
+import lazer from "../../assets/lazer.png";
 
 const HomePage = () => {
   const rightSectionRef = useRef(null);
@@ -31,6 +37,34 @@ const HomePage = () => {
       rightSection.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  const businessData = [
+    {
+      name: "Bərbərxanalar",
+      description: "Kişi bərbərxaları",
+      icon: barbershop,
+    },
+    {
+      name: "Gözəllik salonları",
+      description: "Qadın gözəllik salonları",
+      icon: beautySaloon,
+    },
+    {
+      name: "Fitnes zalları",
+      description: "Kişi və ya qadın fitnes zalları",
+      icon: fitness,
+    },
+    {
+      name: "Lazer Salonlar;",
+      description: "Kişi bərbərxaları",
+      icon: lazer,
+    },
+    {
+      name: "Masaj salonları",
+      description: "Kişi və ya qadınlar üçün masaj sa  bərbərxaları",
+      icon: massage,
+    },
+  ];
 
   return (
     <div id="homePage">
@@ -121,6 +155,41 @@ const HomePage = () => {
               <p>Əməkdaş olan salonlar</p>
               <p>1500+</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Business */}
+      <section id="business">
+        <div className="container">
+          <div className="headText">
+            <h2>
+              Biznes <span>sahələri</span>
+            </h2>
+          </div>
+
+          <div className="cards">
+            {businessData?.map((e, i) => {
+              return (
+                <div className="card">
+                  <div className="nameAndIcon">
+                    {e?.name}
+
+                    <div className="headerIcon">
+                      <FaChevronRight className="icon1" />
+                    </div>
+                  </div>
+
+                  <div className="desc">
+                    <p>{e?.description}</p>
+                  </div>
+
+                  <div className="icon">
+                    <img src={e?.icon} alt={e?.name} />
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
