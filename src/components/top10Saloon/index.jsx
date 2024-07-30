@@ -44,7 +44,7 @@ const Top10Saloon = () => {
       name: "XBeauty Saloon",
       location: "Azərbaycan, Bakı, Nərimanov",
       coverImageURL:
-        "https://avatars.mds.yandex.net/get-altay/9827997/2a0000018a8c5e7469ea21505cbc15415277/orig",
+        "https://i.etsystatic.com/32858250/r/il/4ce4f7/5340628983/il_1588xN.5340628983_5rok.jpg",
     },
     {
       name: "Aqua BarberShop",
