@@ -1,54 +1,54 @@
 import React from "react";
 import "./index.scss";
 import { Link } from "react-router-dom";
+import image3 from "../../assets/image1.jpg";
 
 const Top10Saloon = () => {
   const data = [
     {
-      name: "İsanın gözəllik salonu",
+      name: "Mark BarberShop",
       location: "Azərbaycan, Bakı, Nərimanov",
       coverImageURL:
         "https://pageneon.com/cdn/shop/products/Man-Barber-Shop-Neon-Sign-Led-Light-Pink.jpg?v=1678692807&width=1200",
     },
     {
-      name: "Samirin masaj salonu",
+      name: "Aura Tailor's salon",
       location: "Azərbaycan, Bakı, Binə",
-      coverImageURL:
-        "https://media.istockphoto.com/id/1411972233/tr/foto%C4%9Fraf/empty-dirt-street-in-an-old-western-town-with-various-wooden-buildings-3d-illustration.jpg?s=612x612&w=0&k=20&c=8rhGQTvAn1kvXJYbK4rMQrEAxWqoOw1xczmd19rpox0=",
+      coverImageURL: image3,
     },
     {
-      name: "İsanın gözəllik salonu",
-      location: "Azərbaycan, Bakı, Nərimanov",
+      name: "Jack's BarberShop",
+      location: "Azərbaycan, Bakı, Suraxanı",
       coverImageURL:
         "https://media.timeout.com/images/105816717/1536/1152/image.webp",
     },
     {
-      name: "Samirin masaj salonu",
+      name: "X Beauty Saloon",
       location: "Azərbaycan, Bakı, Binə",
       coverImageURL:
         "https://www.revealhairstudiorye.com/wp-content/uploads/2021/01/Untitled-design.jpg",
     },
     {
-      name: "Ramilin kişi salonu",
+      name: "Relax Massage Saloon",
       location: "Azərbaycan, Bakı, Gənclik",
       coverImageURL:
         "https://bakstone.az/site/assets/files/6468/yilmaz_b_y_g_nclik_1_02.jpg",
     },
     {
-      name: "Ramilin kişi salonu",
+      name: "Promise Tatoo Salon",
       location: "Azərbaycan, Bakı, Gənclik",
       coverImageURL:
-        "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/cqx2q2rqztjuvtqs0zq9.jpg",
+        "https://pageneon.com/cdn/shop/products/Man-Barber-Shop-Neon-Sign-Led-Light-Purple.jpg?v=1678692807&width=1200",
     },
     {
-      name: "Şəhriyarın masaj salonu",
+      name: "XBeauty Saloon",
       location: "Azərbaycan, Bakı, Nərimanov",
       coverImageURL:
         "https://avatars.mds.yandex.net/get-altay/9827997/2a0000018a8c5e7469ea21505cbc15415277/orig",
     },
     {
-      name: "Şəhriyarın masaj salonu",
-      location: "Azərbaycan, Bakı, Nərimanov",
+      name: "Aqua BarberShop",
+      location: "Azərbaycan, Bakı, Yasamal",
       coverImageURL:
         "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/cqx2q2rqztjuvtqs0zq9.jpg",
     },

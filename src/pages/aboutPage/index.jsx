@@ -206,7 +206,7 @@ const AboutPage = () => {
           </div>
         </section>
 
-        <section id="section3">
+        {/* <section id="section3">
           <div className="headText">
             <h2>
               Biznes <span>sahələri</span>
@@ -236,7 +236,7 @@ const AboutPage = () => {
               );
             })}
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

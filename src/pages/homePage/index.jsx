@@ -14,7 +14,7 @@ const HomePage = () => {
   const businessData = [
     {
       name: "Bərbərxanalar",
-      description: "Kişi bərbərxaları",
+      description: "Kişi bərbərxanaları",
       icon: barbershop,
     },
     {
@@ -23,20 +23,20 @@ const HomePage = () => {
       icon: beautySaloon,
     },
     {
-      name: "Fitnes zalları",
-      description: "Kişi və ya qadın fitnes zalları",
+      name: "Dərzi",
+      description: "Tikiş və rəngləmə",
       icon: fitness,
     },
     {
       name: "Lazer Salonlar;",
-      description: "Kişi bərbərxaları",
+      description: "Kişi və qadın lazer salonları",
       icon: lazer,
     },
-    {
-      name: "Masaj salonları",
-      description: "Kişi və ya qadınlar üçün masaj sa  bərbərxaları",
-      icon: massage,
-    },
+    // {
+    //   name: "Masaj salonları",
+    //   description: "Kişi və ya qadınlar üçün masaj sa  bərbərxaları",
+    //   icon: massage,
+    // },
   ];
 
   return (
@@ -117,7 +117,7 @@ const HomePage = () => {
       <section id="section4">
         <div className="container">
           <h3>
-            Məşhur <span style={{color:"#FFC02D"}}>məkanlar</span>
+            Məşhur <span style={{ color: "#FFC02D" }}>məkanlar</span>
           </h3>
 
           <Top10Saloon />
