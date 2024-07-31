@@ -9,6 +9,7 @@ import lazer from "../../assets/lazer.png";
 import { FaScissors, FaCheck } from "react-icons/fa6";
 import image1 from "../../assets/section2_1.jpg";
 import image2 from "../../assets/section2_2.jpg";
+import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
   const data = [
@@ -44,34 +45,6 @@ const AboutPage = () => {
     },
   ];
 
-  const businessData = [
-    {
-      name: "Bərbərxanalar",
-      description: "Kişi bərbərxaları",
-      icon: barbershop,
-    },
-    {
-      name: "Gözəllik salonları",
-      description: "Qadın gözəllik salonları",
-      icon: beautySaloon,
-    },
-    {
-      name: "Fitnes zalları",
-      description: "Kişi və ya qadın fitnes zalları",
-      icon: fitness,
-    },
-    {
-      name: "Lazer Salonlar;",
-      description: "Kişi bərbərxaları",
-      icon: lazer,
-    },
-    {
-      name: "Masaj salonları",
-      description: "Kişi və ya qadınlar üçün masaj sa  bərbərxaları",
-      icon: massage,
-    },
-  ];
-
   const rightSectionRef = useRef(null);
 
   useEffect(() => {
@@ -100,6 +73,12 @@ const AboutPage = () => {
 
   return (
     <div id="aboutPage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Qaychi | Haqqımızda</title>
+        <link rel="canonical" href="https://qaychi.az" />
+      </Helmet>
+
       <div className="container">
         <div className="headText">
           <h1>Haqqımızda</h1>

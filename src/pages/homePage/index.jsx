@@ -4,11 +4,13 @@ import CarouselComponent from "../../components/carousel";
 import Top10Saloon from "../../components/top10Saloon";
 import Partners from "../../components/partners";
 import { FaChevronRight } from "react-icons/fa6";
-import massage from "../../assets/massage.png";
 import barbershop from "../../assets/barbershop.png";
 import beautySaloon from "../../assets/beautySaloon.png";
 import fitness from "../../assets/fitness.png";
 import lazer from "../../assets/lazer.png";
+import gift_box from "../../assets/gift_box.png";
+import { Helmet } from "react-helmet";
+import PromoCodes from "../../components/promoCodes";
 
 const HomePage = () => {
   const businessData = [
@@ -28,19 +30,20 @@ const HomePage = () => {
       icon: fitness,
     },
     {
-      name: "Lazer Salonlar;",
-      description: "Kişi və qadın lazer salonları",
+      name: "Lazer məzkəzləri",
+      description: "Kişi və qadın lazer məzkəzləri",
       icon: lazer,
     },
-    // {
-    //   name: "Masaj salonları",
-    //   description: "Kişi və ya qadınlar üçün masaj sa  bərbərxaları",
-    //   icon: massage,
-    // },
   ];
 
   return (
     <div id="homePage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Qaychi</title>
+        <link rel="canonical" href="https://qaychi.az" />
+      </Helmet>
+
       <section id="section1">
         <div className="container">
           <CarouselComponent />
@@ -92,23 +95,23 @@ const HomePage = () => {
 
           <div className="right">
             <div>
-              <p>Əməkdaş olan salonlar</p>
+              <p>Gözəllik salonlar</p>
               <p>2800+</p>
             </div>
 
             <div>
-              <p>Aktiv istifadəçilər</p>
+              <p>Bərbərxanalar</p>
               <p>15000+</p>
             </div>
 
             <div>
-              <p>Əməkdaş olan salonlar</p>
+              <p>Dərzilər</p>
               <p>1500+</p>
             </div>
 
             <div>
-              <p>Əməkdaş olan salonlar</p>
-              <p>1500+</p>
+              <p>Lazer Mərkəzləri</p>
+              <p>1000+</p>
             </div>
           </div>
         </div>
@@ -116,11 +119,32 @@ const HomePage = () => {
 
       <section id="section4">
         <div className="container">
-          <h3>
-            Məşhur <span style={{ color: "#FFC02D" }}>məkanlar</span>
-          </h3>
+          <div className="headBar">
+            <h3>
+              Populyar <span style={{ color: "#FFC02D" }}>məkanlar</span>
+            </h3>
+
+            <button>Hamısı</button>
+          </div>
 
           <Top10Saloon />
+        </div>
+      </section>
+
+      {/* promo code's */}
+      <section id="section6">
+        <div className="container">
+          <div className="headBar">
+            <h3>
+              <img src={gift_box} alt="gift_box" />
+              <span style={{ color: "#FFC02D" }}>Promo</span>
+              təkliflər{" "}
+            </h3>
+
+            <button>Hamısı</button>
+          </div>
+
+          <PromoCodes />
         </div>
       </section>
 
