@@ -117,20 +117,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id="section4">
-        <div className="container">
-          <div className="headBar">
-            <h3>
-              Populyar <span style={{ color: "#FFC02D" }}>məkanlar</span>
-            </h3>
-
-            <button>Hamısı</button>
-          </div>
-
-          <Top10Saloon />
-        </div>
-      </section>
-
       {/* promo code's */}
       <section id="section6">
         <div className="container">
@@ -145,6 +131,20 @@ const HomePage = () => {
           </div>
 
           <PromoCodes />
+        </div>
+      </section>
+
+      <section id="section4">
+        <div className="container">
+          <div className="headBar">
+            <h3>
+              Populyar <span style={{ color: "#FFC02D" }}>məkanlar</span>
+            </h3>
+
+            <button>Hamısı</button>
+          </div>
+
+          <Top10Saloon />
         </div>
       </section>
 
