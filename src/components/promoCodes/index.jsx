@@ -13,6 +13,7 @@ const PromoCodes = () => {
         "https://pageneon.com/cdn/shop/products/Man-Barber-Shop-Neon-Sign-Led-Light-Pink.jpg?v=1678692807&width=1200",
       rating: 4.6,
       ratingCount: 500,
+      percentage: 30,
     },
     {
       name: "Aura Tailor's salon",
@@ -20,6 +21,7 @@ const PromoCodes = () => {
       coverImageURL: image3,
       rating: 4.3,
       ratingCount: 900,
+      percentage: 50,
     },
     {
       name: "Jack's BarberShop",
@@ -28,6 +30,7 @@ const PromoCodes = () => {
         "https://media.timeout.com/images/105816717/1536/1152/image.webp",
       rating: 5.0,
       ratingCount: 1000,
+      percentage: 10,
     },
     {
       name: "X Beauty Saloon",
@@ -36,6 +39,7 @@ const PromoCodes = () => {
         "https://www.revealhairstudiorye.com/wp-content/uploads/2021/01/Untitled-design.jpg",
       rating: 4.8,
       ratingCount: 1500,
+      percentage: 20,
     },
     {
       name: "Relax Massage Saloon",
@@ -44,6 +48,7 @@ const PromoCodes = () => {
         "https://bakstone.az/site/assets/files/6468/yilmaz_b_y_g_nclik_1_02.jpg",
       rating: 4.0,
       ratingCount: 2000,
+      percentage: 15,
     },
     {
       name: "Promise Tatoo Salon",
@@ -52,6 +57,7 @@ const PromoCodes = () => {
         "https://pageneon.com/cdn/shop/products/Man-Barber-Shop-Neon-Sign-Led-Light-Purple.jpg?v=1678692807&width=1200",
       rating: 4.6,
       ratingCount: 4000,
+      percentage: 35,
     },
     {
       name: "XBeauty Saloon",
@@ -60,6 +66,7 @@ const PromoCodes = () => {
         "https://i.etsystatic.com/32858250/r/il/4ce4f7/5340628983/il_1588xN.5340628983_5rok.jpg",
       rating: 4.6,
       ratingCount: 600,
+      percentage: 30,
     },
     {
       name: "Aqua BarberShop",
@@ -68,6 +75,7 @@ const PromoCodes = () => {
         "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/cqx2q2rqztjuvtqs0zq9.jpg",
       rating: 4.6,
       ratingCount: 950,
+      percentage: 50,
     },
   ];
 
@@ -83,9 +91,8 @@ const PromoCodes = () => {
                 <p
                   style={{ display: "flex", alignItems: "center", gap: "5px" }}
                 >
-                  <FaStar /> {e?.rating.toFixed(1)}
+                  {e?.percentage} %
                 </p>
-                <p>({e?.ratingCount}+)</p>
               </div>
             </div>
 

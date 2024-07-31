@@ -22,6 +22,7 @@
         .image {
             overflow: hidden;
             height: 250px;
+            position: relative;
 
             img {
                 transition: all 0.5s;
@@ -30,6 +31,24 @@
                 object-fit: cover;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
+            }
+
+            .rating {
+                background-color: #FFC02D;
+                position: absolute;
+                z-index: 5000;
+                bottom: 30px;
+                right: 0;
+                display: flex;
+                gap: 10px;
+                padding: 2px 15px 2px 15px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+
+                p {
+                    color: black;
+                    font-weight: 600;
+                }
             }
         }
 

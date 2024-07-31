@@ -134,6 +134,7 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* popular places */}
       <section id="section4">
         <div className="container">
           <div className="headBar">
