@@ -1,4 +1,5 @@
 import AboutPage from "../pages/aboutPage";
+import ContactPage from "../pages/contactPage";
 import HomePage from "../pages/homePage";
 import NotFound from "../pages/notFound";
 import PartnersPage from "../pages/partnersPage";
@@ -20,6 +21,10 @@ const ROUTES = [
       {
         path: "partners",
         element: <PartnersPage />,
+      },
+      {
+        path: "contact",
+        element: <ContactPage />,
       },
       {
         path: "*",

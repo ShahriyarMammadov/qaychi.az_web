@@ -1,0 +1,128 @@
+#contactPage {
+    margin: 30px 0;
+
+    @media only screen and (max-width: 1330px) {
+        margin: 20px 15px;
+    }
+
+    .container {
+        .headText {
+            margin-bottom: 35px;
+
+            h1 {
+                font-size: 45px;
+
+                span {
+                    color: #FFC02D;
+                }
+            }
+
+            @media only screen and (max-width: 1000px) {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+
+            @media only screen and (max-width: 750px) {
+                h1 {
+                    font-size: 36px;
+                }
+            }
+
+            @media only screen and (max-width: 550px) {
+                h1 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .formComponent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 60px 0;
+
+            form {
+                padding: 30px 35px;
+                background-color: #fff;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 15px;
+                width: 65%;
+
+                input {
+                    width: 100%;
+                    background-color: #f4f6fa;
+                    border: none;
+                    border-radius: 8px;
+                    padding: 20px 25px;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                    &.phoneNumber,
+                    &.email {
+                        margin-top: 15px;
+                    }
+
+
+                    &:focus {
+                        outline: 1px solid #FFC02D;
+                    }
+                }
+
+                .nameAndSurname {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    input {
+                        width: 50%;
+                    }
+                }
+
+                .button {
+
+                    button {
+                        width: 100%;
+                        margin-top: 30px;
+                        border: none;
+                        padding: 15px 0px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: black;
+                        cursor: pointer;
+                        border-radius: 10px;
+                        transition: all 0.5s;
+                        background-color: #ffc02dd4;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                        &:hover {
+                            box-shadow: rgba(206, 126, 14, 0.35) 0px 2px 4px 0px, rgb(175, 150, 7) 0px 2px 16px 0px;
+                            background-color: #FFC02D;
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 1000px) {
+                    width: 100%;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    padding: 30px 15px;
+
+                    .nameAndSurname {
+                        flex-direction: column;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                margin: 0 !important;
+            }
+        }
+    }
+}
