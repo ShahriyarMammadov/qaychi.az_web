@@ -1,6 +1,7 @@
 import AboutPage from "../pages/aboutPage";
 import HomePage from "../pages/homePage";
 import NotFound from "../pages/notFound";
+import PartnersPage from "../pages/partnersPage";
 import MainRoot from "./mainRoot";
 
 const ROUTES = [
@@ -15,6 +16,10 @@ const ROUTES = [
       {
         path: "about",
         element: <AboutPage />,
+      },
+      {
+        path: "partners",
+        element: <PartnersPage />,
       },
       {
         path: "*",

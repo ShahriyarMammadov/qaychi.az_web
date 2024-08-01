@@ -75,6 +75,7 @@ const Footer = () => {
               "https://www.google.com/maps/place/Code+Academy/@40.377191,49.853945,15z/data=!4m6!3m5!1s0x40307d079efb5163:0xc20aa51a5f0b5e01!8m2!3d40.3771909!4d49.8539455!16s%2Fg%2F11c584m839?hl=tr-TR&entry=ttu"
             }
             className="location"
+            target="_blank"
           >
             <HiOutlineLocationMarker className="icon" />
 

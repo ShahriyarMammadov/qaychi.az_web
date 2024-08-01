@@ -1,0 +1,224 @@
+#partnersPage {
+    margin: 30px 0;
+
+    @media only screen and (max-width: 1330px) {
+        margin: 20px 15px;
+    }
+
+    #section1 {
+        .container {
+            padding: 30px 35px;
+            background-color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .headText {
+                width: 45%;
+
+                h1 {
+                    font-size: 40px;
+
+                    span {
+                        color: #FFC02D;
+                    }
+                }
+
+                p {
+                    margin-top: 30px;
+                    color: #62717c;
+
+                    span {
+                        color: #FFC02D;
+                        font-weight: 600;
+                    }
+                }
+
+                button {
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    background-color: #FFC02D;
+                    transition: all 0.5s;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: rgba(206, 126, 14, 0.35) 0px 2px 4px 0px, rgb(175, 150, 7) 0px 2px 16px 0px;
+                        background-color: #FFC02D;
+                    }
+                }
+            }
+
+            .right {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 950px) {
+                .headText {
+                    width: 50%;
+                }
+
+                .right {
+                    width: 48%;
+                }
+            }
+
+            @media only screen and (max-width: 860px) {
+                .headText {
+                    h1 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .right {
+                    width: 48%;
+                }
+            }
+
+            @media only screen and (max-width: 700px) {
+                flex-direction: column;
+
+                .headText {
+                    width: 100%;
+
+                    h1 {
+                        font-size: 32px;
+                    }
+                }
+
+                .right {
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+
+                .headText {
+
+                    h1 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        text-align: justify;
+                    }
+                }
+
+                .right {
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    #section2 {
+        margin: 60px 0 20px 0;
+
+        @media only screen and (max-width: 1330px) {
+            margin: 50px 10px;
+        }
+
+        .container {
+            .cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                margin-top: 30px;
+
+                .card {
+                    padding: 15px 10px;
+                    text-align: center;
+
+                    .content {
+                        .title {
+                            h4 {
+                                font-weight: 600;
+                                font-size: 17px;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        p {
+                            color: #62717c;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .image {
+                        margin: 15px 0;
+
+                        .icon {
+                            font-size: 40px;
+                            color: #FFC02D;
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 1000px) {
+                    flex-wrap: wrap;
+
+                    .card {
+                        width: calc((100% / 2) - 5px);
+                    }
+                }
+
+                @media only screen and (max-width: 550px) {
+
+                    .card {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #section3 {
+        margin: 80px 0 0 0;
+
+        @media only screen and (max-width: 1330px) {
+            margin: 20px 0px;
+        }
+
+
+        .container {
+            padding: 1px 35px 50px 35px;
+            background-color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 15px;
+
+            .headText {
+                h3 {
+                    text-align: start;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                padding: 1px 10px 50px 10px;
+            }
+        }
+    }
+}

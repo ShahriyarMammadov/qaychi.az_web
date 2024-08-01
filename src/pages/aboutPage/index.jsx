@@ -1,11 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./index.scss";
-import { FaChevronRight } from "react-icons/fa6";
-import massage from "../../assets/massage.png";
-import barbershop from "../../assets/barbershop.png";
-import beautySaloon from "../../assets/beautySaloon.png";
-import fitness from "../../assets/fitness.png";
-import lazer from "../../assets/lazer.png";
 import { FaScissors, FaCheck } from "react-icons/fa6";
 import image1 from "../../assets/section2_1.jpg";
 import image2 from "../../assets/section2_2.jpg";
