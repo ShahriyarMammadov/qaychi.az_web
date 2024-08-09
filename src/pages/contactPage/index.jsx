@@ -1,9 +1,16 @@
 import React from "react";
 import "./index.scss";
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
   return (
     <div id="contactPage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Qaychi | Əlaqə</title>
+        <link rel="canonical" href="https://qaychi.az" />
+      </Helmet>
+
       <div className="container">
         <div className="headText">
           <h1>
